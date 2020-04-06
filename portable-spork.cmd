@@ -6,13 +6,13 @@ set CURRENT_DIR=%~dp0
 if not "" == "%CURRENT_DIR%" if #%CURRENT_DIR:~-1%# == #\# set CURRENT_DIR=%CURRENT_DIR:~0,-1%
 
 :: -- OVERRIDE the user environment variable to point to a portable directory
-set USERPROFILE=%CURRENT_DIR%\Data
+set USERPROFILE=%CURRENT_DIR%\SPORK
 
 :: -- (Optional) Some programs do not use these environment variables
-set APPDATA=%CURRENT_DIR%\Data\AppData\Roaming>nul
-set LOCALAPPDATA=%CURRENT_DIR%\Data\AppData\Local>nul
-set ALLUSERSPROFILE=%CURRENT_DIR%\Data\AppData\Roaming>nul
-set PROGRAMDATA=%CURRENT_DIR%\Data\AppData\Roaming>nul
+set APPDATA=%CURRENT_DIR%\SPORK\AppData\Roaming>nul
+set LOCALAPPDATA=%CURRENT_DIR%\SPORK\AppData\Local>nul
+set ALLUSERSPROFILE=%CURRENT_DIR%\SPORK\AppData\Roaming>nul
+set PROGRAMDATA=%CURRENT_DIR%\SPORK\AppData\Roaming>nul
 
 REM -- final prep
 
